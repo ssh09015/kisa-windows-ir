@@ -1,8 +1,8 @@
 # 🛠️ KISA 기반 Windows Incident Response Toolkit
 
 ## 개요
-이 저장소는**「KISA 침해사고 분석 절차 안내서 (2010-8호)」**와 
-**「정보통신분야 침해사고 대응 안내서 (2024.09)」**에서 제시한  
+이 저장소는「KISA 침해사고 분석 절차 안내서 (2010-8호)」와 
+「정보통신분야 침해사고 대응 안내서 (2024.09)」에서 제시한  
 점검 항목과 예시 명령을 바탕으로, Windows 환경 침해사고 초동 대응 및 아티팩트 수집을  
 자동화한 PowerShell 스크립트 모음입니다.  
 
@@ -47,12 +47,12 @@ kisa-windows-ir/
    ```powershell
    .\ir-collect.ps1 -CasePath "C:\IR_Case01" -Days 7 -Zip
 
--CasePath: 결과 저장 경로
+   - CasePath: 결과 저장 경로
 
--Days: 최근 이벤트 로그 수집 기간 (기본 7일)
+   - Days: 최근 이벤트 로그 수집 기간 (기본 7일)
 
--Zip: 결과를 압축(zip)으로 저장
+   - Zip: 결과를 압축(zip)으로 저장
 
-신속 수집(핵심 아티팩트만):
+3. 신속 수집(핵심 아티팩트만):
    ```powershell
    .\ir-quick.ps1 -CasePath "C:\IR_Case01"
