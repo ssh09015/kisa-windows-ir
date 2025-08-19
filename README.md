@@ -46,7 +46,6 @@ kisa-windows-ir/
 2. 스크립트 실행 (예: 상세 수집):
    ```powershell
    .\ir-collect.ps1 -CasePath "C:\IR_Case01" -Days 7 -Zip
-   
 
 ### 주요 인자 설명
 
