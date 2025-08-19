@@ -1,9 +1,9 @@
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory=$true)]
-    [string]$CasePath,   # 결과 저장 경로
-    [int]$Days = 7,      # 최근 이벤트 로그 수집 기간 (기본 7일)
-    [switch]$Zip         # 결과를 압축(zip)할지 여부
+  [string]$OutRoot = "$env:SystemDrive\IR",   # 출력 경로 기본값: C:\IR
+  [int]$Days = 7,                             # 이벤트 로그 수집 기간 (최근 7일)
+  [switch]$Zip,                               # 결과를 ZIP으로 압축할지 여부
+  [switch]$NoHeavy                            # 무거운 작업(파일 전체 스냅샷) 제외 여부
 )
 
 Set-StrictMode -Version Latest
