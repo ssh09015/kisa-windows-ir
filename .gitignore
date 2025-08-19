@@ -1,0 +1,22 @@
+﻿# OS/편집기
+.DS_Store
+Thumbs.db
+*.swp
+
+# PowerShell
+*.ps1xml
+*.pssc
+
+# IR 산출물/대용량
+outputs/
+*.zip
+*.evtx
+*.etl
+*.pcap
+*.pcapng
+*.log
+*.tmp
+*.bak
+
+# 기타
+~$*
